@@ -6,10 +6,10 @@
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width" />
     <title>首页模板</title>
-    <link href="layui/css/layui.css" rel="stylesheet" type="text/css">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="css/index_style.css" rel="stylesheet" type="text/css">
-    <link href="css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="layui/css/layui.css" rel="stylesheet" th:href="@{/layui/css/layui.css}" type="text/css">
+    <link href="font-awesome/css/font-awesome.min.css" th:href="@{/font-awesome/css/font-awesome.min.css}" rel="stylesheet" type="text/css">
+    <link href="css/index_style.css" rel="stylesheet" th:href="@{/css/index_style.css}" type="text/css">
+    <link href="css/animate.min.css" rel="stylesheet" th:href="@{/css/animate.min.css}" type="text/css">
 </head>
 <body>
     <div id="menu" class="hover_animation menu_open" data-mark="false">
@@ -20,8 +20,8 @@
     <div id="navgation" class="navgation navgation_close">
         <ul class="point">
             <li><a href="#">首页</a></li>
-            <li><a href="" th:href="">博客</a></li>
-            <li><a href="message.html">留言</a></li>
+            <li><a href="/to/article">博客</a></li>
+            <li><a href="message.html" data-url="">留言</a></li>
             <li><a href="diary.html">日志</a></li>
         </ul>
         <div class="logo"><a>Mr.Yss</a></div>
@@ -30,9 +30,9 @@
         <div class="fp-tablecell">
             <div class="page1">
                 <div class="nav wow zoomIn" data-wow-duration="2s">
-                    <h1>燕十三</h1>
+                    <h1>乖,摸摸头</h1>
                     <p>剑气纵横三万里,一剑光寒十九洲</p>
-                    <a class="layui-btn layui-btn-normal" style="margin-top: 20px" href="#">Enter Blog</a>
+                    <a class="layui-btn layui-btn-normal" style="margin-top: 20px" href="/to/article">Enter Blog</a>
                 </div>
                 <a class="next wow fadeInUp" data-wow-duration="2s" id="next"></a>
             </div>
@@ -187,7 +187,7 @@
                                 <li class="active"><a href="#"><i class="fa fa-share"></i>资源</a></li>
                                 <li class="active"><a href="#"><i class="fa fa-snowflake-o"></i>日记</a></li>
                                 <li class="active"><a href="#"><i class="fa fa-files-o"></i>归档</a></li>
-                            </ul>                   
+                            </ul>
                         </div>
                     </div>
                     <div class="layui-col-xs12 layui-col-sm12 layui-col-md4">
@@ -211,10 +211,10 @@
                     </div>
                 </div>
             </div>
-        </div>  
+        </div>
     </footer>
-    <script src="layui/layui.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="layui/layui.js" th:href="@{layui/layui.js}"></script>
+    <script src="js/wow.min.js" th:href="@{js/wow.min.js}"></script>
+    <script src="js/index.js" th:href="@{js/index.js}"></script>
 </body>
 </html>

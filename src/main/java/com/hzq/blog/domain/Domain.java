@@ -14,7 +14,6 @@ import java.util.Date;
  * @date 2019-12-20 20:11
  **/
 @Data
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 class Domain {
